@@ -1,0 +1,3 @@
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.gallery-grid img{width:100%;height:140px;object-fit:cover;border-radius:10px;cursor:pointer;transition:transform .18s}
+.gallery-grid img:active{transform:scale(.98)}

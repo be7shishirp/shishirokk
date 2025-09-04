@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shishir Pandey — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="bio.css">
+  <link rel="stylesheet" href="address.css">
+  <link rel="stylesheet" href="family.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body class="light">
+  <div id="bg-3d"></div>
+  <header class="site-header">
+    <div class="logo-wrap">
+      <img src="/assets/logo.png" alt="logo" class="logo">
+      <div class="site-title rainbow" id="main-title">Shishir Pandey</div>
+    </div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#bio">Bio</a>
+      <a href="#family">Family</a>
+      <a href="#address">Address</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+    <div class="controls">
+      <button id="theme-toggle" class="btn">Switch Theme</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home / Hero -->
+    <section id="home" class="page hero">
+      <div class="hero-banner">
+        <img src="/assets/banner.jpg" alt="banner" class="banner-img">
+        <div class="hero-overlay">
+          <div class="hero-top-pic">
+            <img src="/assets/profile.jpg" alt="Shishir" class="profile-pic">
+          </div>
+          <h1 class="hero-heading rainbow">Shishir Pandey</h1>
+          <p class="sub thanks">Thanks for visiting.</p>
+          <div class="one-word-anim">Explorer</div>
+
+          <div class="socials">
+            <a class="social pebble" href="https://www.instagram.com/shishirpnde" target="_blank">Instagram</a>
+            <a class="social pebble" href="https://www.shishirp.com.np" target="_blank">Website</a>
+            <a class="social pebble" href="mailto:be7ccrp@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio -->
+    <section id="bio" class="page bio">
+      <div class="container">
+        <h2 class="section-title rainbow">Biography</h2>
+        <div class="bio-grid">
+          <div class="bio-left">
+            <img src="/assets/profile.jpg" class="bio-avatar" alt="Shishir">
+            <ul class="bio-list">
+              <li><strong>Name:</strong> Shishir Pandey</li>
+              <li><strong>Date of birth (BS):</strong> 2061-07-07 BS</li>
+              <li><strong>Date of birth (AD):</strong> 2004-10-23</li>
+              <li><strong>Birth Time:</strong> 23:17</li>
+              <li><strong>Location:</strong> Palpa (birth), Kaligandaki Harmichour, Gulmi (home town), Currently: Butwal</li>
+            </ul>
+          </div>
+          <div class="bio-right">
+            <div class="age-card">
+              <h3>Live Age Counter</h3>
+              <div id="age-live" class="age-live">—</div>
+              <div id="age-summary" class="age-summary">—</div>
+            </div>
+
+            <div class="education">
+              <h4>Education</h4>
+              <p>SEE (10) — GPA 3.70 (Math & Account) — Passed 2076 BS. SLC(12) — GPA 3.08 — Passed 2081 BS. Subjects: Account & Business Studies.</p>
+            </div>
+
+            <div class="skills">
+              <h4>Skills & Experience</h4>
+              <p>Skills: Reading, Exploring, Tally, Excel. Experience: 1 year audit — Tally & Audit files.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family -->
+    <section id="family" class="page family">
+      <h2 class="section-title rainbow">Family</h2>
+      <div class="family-tree">
+        <div class="family-node father card" data-name="father">
+          <img src="/assets/father.jpg" alt="father">
+          <div class="card-info"><h3>Father</h3><p>Name: [Father's Name]</p><p>Born: [DOB]</p><p>Work: [Work]</p></div>
+        </div>
+        <div class="family-node mother card" data-name="mother">
+          <img src="/assets/mother.jpg" alt="mother">
+          <div class="card-info"><h3>Mother</h3><p>Name: [Mother's Name]</p><p>Born: [DOB]</p><p>Work: [Work]</p></div>
+        </div>
+        <div class="family-node me card" data-name="me">
+          <img src="/assets/profile.jpg" alt="me">
+          <div class="card-info"><h3>Me</h3><p>Shishir Pandey</p><p>2004-10-23</p></div>
+        </div>
+        <div class="family-node sister card" data-name="sister">
+          <img src="/assets/sister.jpg" alt="sister">
+          <div class="card-info"><h3>Sister</h3></div>
+        </div>
+        <div class="family-node brother card" data-name="brother">
+          <img src="/assets/brother.jpg" alt="brother">
+          <div class="card-info"><h3>Brother</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Address -->
+    <section id="address" class="page address">
+      <h2 class="section-title rainbow">Address & Places</h2>
+      <div class="places">
+        <div class="place">
+          <h4>Birth Place: Palpa</h4>
+          <p>Tansen, Syangja — <a href="#" class="map-link" data-q="Palpa, Nepal">View on map</a></p>
+          <img src="/assets/palpa.jpg" alt="palpa"/>
+        </div>
+        <div class="place">
+          <h4>Home Town: Kaligandaki Harmichour, Gulmi</h4>
+          <p><a href="#" class="map-link" data-q="Harmichour, Gulmi, Nepal">View on map</a></p>
+          <img src="/assets/harmichour.jpg" alt="harmichour"/>
+        </div>
+        <div class="place">
+          <h4>Currently: Butwal</h4>
+          <p><a href="#" class="map-link" data-q="Butwal, Nepal">View on map</a></p>
+          <img src="/assets/butwal.jpg" alt="butwal"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="page gallery">
+      <h2 class="section-title rainbow">Gallery</h2>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- images placeholder: replace with your uploaded images -->
+        <img data-src="/assets/gallery1.jpg" src="/assets/thumb1.jpg" class="gpic" alt="pic1">
+        <img data-src="/assets/gallery2.jpg" src="/assets/thumb2.jpg" class="gpic" alt="pic2">
+        <img data-src="/assets/gallery3.jpg" src="/assets/thumb3.jpg" class="gpic" alt="pic3">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Shishir Pandey. All rights reserved.</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close">✕</button>
+    <img id="lb-img" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+  <script src="bio.js"></script>
+  <script src="family.js"></script>
+  <script src="address.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

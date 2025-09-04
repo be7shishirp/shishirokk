@@ -1,0 +1,6 @@
+.family-tree{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.family-node{width:180px;background:var(--card);border-radius:12px;padding:8px;text-align:center;cursor:pointer;transition:transform .22s,box-shadow .22s}
+.family-node img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.family-node .card-info{display:none;margin-top:8px}
+.family-node.open{transform:translateY(-8px);box-shadow:0 14px 40px rgba(0,0,0,.18)}
+.family-node.open .card-info{display:block}

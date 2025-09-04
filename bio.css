@@ -1,0 +1,6 @@
+.bio-grid{display:grid;grid-template-columns:280px 1fr;gap:20px;align-items:start}
+.bio-avatar{width:220px;border-radius:14px}
+.age-card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 30px rgba(0,0,0,.08)}
+.age-live{font-size:20px;margin-top:8px}
+.age-summary{font-size:14px;color:rgba(0,0,0,.6)}
+@media (max-width:900px){.bio-grid{grid-template-columns:1fr}}

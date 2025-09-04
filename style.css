@@ -1,0 +1,33 @@
+:root{
+  --bg:#f7f7fb; --card:#fff; --text:#111; --accent:linear-gradient(90deg,#ff5f6d,#ffc371,#8be9fd,#9b59ff);
+}
+body.dark{ --bg:#0b0f1a; --card:#0f1724; --text:#e6eef8; }
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;position:sticky;top:0;backdrop-filter:blur(6px);z-index:40}
+.logo{width:56px;height:56px;border-radius:10px;object-fit:cover}
+.site-title{font-weight:800;font-size:22px}
+.nav a{margin:0 8px;text-decoration:none;color:var(--text);padding:6px 10px;border-radius:8px}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.section-title{font-size:28px;margin:12px 0}
+.btn{padding:8px 12px;border-radius:10px;border:0;cursor:pointer}
+.page{padding:48px 0}
+footer.site-footer{padding:22px;text-align:center}
+.rainbow{background:var(--accent);-webkit-background-clip:text;background-clip:text;color:transparent;animation:rainbow 4s linear infinite}
+@keyframes rainbow{0%{filter:hue-rotate(0deg)}100%{filter:hue-rotate(360deg)}}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);opacity:0;pointer-events:none;transition:opacity .25s}
+.lightbox[aria-hidden="false"]{opacity:1;pointer-events:auto}
+.lightbox img{max-width:90%;max-height:80%;border-radius:10px}
+.lb-close{position:absolute;top:20px;right:20px;background:#fff;border-radius:50%;width:40px;height:40px;border:0;cursor:pointer}
+
+/* 3d bg placeholder */
+#bg-3d{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 20%, rgba(255,200,200,.06), transparent 10%), radial-gradient(circle at 80% 80%, rgba(200,220,255,.05), transparent 12%);pointer-events:none}
+
+/* pebble click */
+.pebble{display:inline-block;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,0.06);transition:transform .18s, box-shadow .18s;}
+.pebble:active{transform:translateY(4px) scale(.98);}
+
+/* small responsive */
+@media (max-width:800px){ .nav{display:none} .site-title{font-size:18px} }
